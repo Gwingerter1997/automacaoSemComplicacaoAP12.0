@@ -1,0 +1,1 @@
+# automacaoSemComplicacaoAP12.0
