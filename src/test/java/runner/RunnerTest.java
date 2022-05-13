@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        tags = "",
+        tags = "@loginInvalido",
         glue = "stepes",
         plugin = {"json:target/reports/CucumberReports.json","pretty"},
         snippets = CucumberOptions.SnippetType.CAMELCASE

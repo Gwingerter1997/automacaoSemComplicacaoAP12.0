@@ -8,6 +8,7 @@ public class LoginMap {
     public static String token;
 
     public static Map<String, Object> getLogin() {
+
         return login;
     }
     public static void initLogin(){

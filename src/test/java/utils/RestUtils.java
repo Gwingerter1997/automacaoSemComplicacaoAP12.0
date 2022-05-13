@@ -16,7 +16,7 @@ public class RestUtils {
     public static void setBaseUri(String uri){
         RestAssured.baseURI= uri;
     }
-    public static String getBaseUei(){
+    public static String getBaseUri(){
         return RestAssured.baseURI;
     }
     public static Response post(Object json, ContentType contentType, String endpoint) {
