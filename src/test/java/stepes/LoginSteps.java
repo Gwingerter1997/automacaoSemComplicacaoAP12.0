@@ -40,4 +40,11 @@ public class LoginSteps {
 
     }
 
+    @Dado("que tenha realizado o login com dados validos")
+    public void queTenhaRealizadoOLoginComDadosValidos() {
+        queTenhaUmPayloadValidoDaAPIDeLogin();
+        envioUmaRequisicaoDoTipoPOSTDeLogin();
+        armazenoOTokenQueReceboDoResponseDeLogin();
+    }
+
 }
