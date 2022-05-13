@@ -14,4 +14,10 @@ public class GenericStepes {
         Assertions.assertEquals(status, RestUtils.getResponse().getStatusCode());
 
     }
+
+    @Entao("valido que no campo {string} possui valor {string}")
+    public void validoQueNoCampoPossuiValor(String key, String value) {
+
+        Assertions.assertEquals(value,RestUtils.getResponse().jsonPath().get(key));
+    }
 }
